@@ -1,0 +1,515 @@
+/*-------rgb(190, 131, 22)-----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-family: serif;
+  color: black;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*--------------------------------------------------------------------------*/
+/*BUTTON*/
+/*--------------------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  text-decoration: none;
+  border: rgb(190, 131, 22) solid 1px;
+  padding: 5px 10px;
+  border-radius: 200px;
+  font-size: 20px;
+  color: white;
+}
+.btn1:link,
+.btn1:visited,
+input[type="submit"] {
+  background-color: rgb(190, 131, 22);
+  margin-right: 10px;
+  color: white;
+}
+.btn2:link,
+.btn2:visited {
+  color: rgb(190, 131, 22);
+}
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: orange;
+  transition-duration: 0.5s;
+}
+.btn2:hover,
+.btn2:active {
+  color: white;
+}
+/*--------------------------------------------------------------------------*/
+/*HEADER*/
+/*--------------------------------------------------------------------------*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  margin-bottom: 10px;
+}
+.hero {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+h1 {
+  font-size: 120%;
+  font-weight: 10;
+  font-family: serif;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  color: white;
+}
+
+/*------------------------------------------------*/
+/* NAVIGATION*/
+/*------------------------------------------------*/
+
+.logo {
+  height: 5%;
+  width: 5%;
+  float: left;
+  margin: 20px 200px;
+}
+.logo-black {
+  display: none;
+  height: 40px;
+  width: auto;
+  float: left;
+  margin: 5px 200px;
+  display: none;
+}
+
+.list {
+  float: right;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+}
+
+.list li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 90%;
+}
+
+.list li:active,
+.list li:hover {
+  border-bottom: solid 3px rgb(190, 131, 22);
+  transition-duration: 0.2s;
+  padding-bottom: 3px;
+}
+.list li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*-------------------------------sticky nav-------------------------------*/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.966);
+  z-index: 9999;
+  transition-duration: 1.5s;
+}
+.sticky .list li a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+.sticky .logo-black {
+  display: block;
+}
+.sticky .logo {
+  display: none;
+}
+.sticky .list {
+  float: right;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+}
+
+/*--------------------------------------------------------------*/
+/*-------------------------------section-------------------------------*/
+/*-------------------------------------------------------------*/
+
+.section-features {
+  padding: 8% 10% 8% 10%;
+}
+h2 {
+  font-size: 200%;
+  font-weight: 10;
+  font-family: serif;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  text-align: center;
+  margin: 2% 0;
+}
+h2:after {
+  display: block;
+  background-color: orange;
+  height: 2px;
+  width: 100px;
+  content: " ";
+  margin: 20px auto 0 auto;
+}
+.long-copy {
+  font-size: 110%;
+  width: 60%;
+  margin: 0 20%;
+  line-height: 130%;
+  padding: 1% 0;
+}
+.box {
+  padding: 0 2%;
+}
+h3 {
+  font-size: 130%;
+  font-weight: 30;
+  padding-bottom: 1px;
+}
+.box p {
+  font-size: 15px;
+}
+.box ion-icon {
+  font-size: 50px;
+  color: orange;
+  margin-bottom: 10px;
+}
+/*--------------------------------------------------------------*/
+/*-------------------------------meals section-------------------------------*/
+/*-------------------------------------------------------------*/
+.meals-photo {
+  list-style: none;
+  width: 100%;
+}
+.meals-photo li {
+  display: block;
+  float: left;
+  width: 25%;
+  margin: 0%;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+.meals-photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  opacity: 0.5;
+}
+.meals-photo img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+/*--------------------------------------------------------------*/
+/*-------------------------------how it works-------------------------------*/
+/*-------------------------------------------------------------*/
+.section-steps {
+  padding-top: 50px;
+  background-color: rgb(233, 232, 232);
+  margin: 30px;
+}
+.steps-box {
+  height: 300px;
+  padding-left: 400px;
+}
+
+.app {
+  height: 90%;
+  width: auto;
+}
+
+.steps {
+  text-align: justify;
+  float: left;
+  font-size: 110%;
+  margin: 5px 50px 10px 5px;
+  padding-bottom: 20px;
+}
+
+.steps div {
+  border: solid orange 2px;
+  border-radius: 100%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-right: 20px;
+  font-size: 150%;
+  text-align: center;
+  color: orange;
+}
+.link {
+  margin: 20px 20px 0 0;
+  height: 50px;
+  width: auto;
+}
+
+/*--------------------------------------------------------------*/
+/*-------------------------------cities-------------------------------*/
+/*-------------------------------------------------------------*/
+.section-cities {
+  padding: 25px 0;
+  margin: 10px;
+}
+.total {
+  margin: 0 50px 20px 50px;
+}
+.cities img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  color: orange;
+  text-align: center;
+  font-size: 120%;
+  /* secret to alighs icons and text*/
+  line-height: 120%;
+  vertical-align: middle;
+}
+.city-features {
+  margin: 5px 30px;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+.city-features a:link,
+.city-features a:visited {
+  font-size: 120%;
+  text-decoration: none;
+  color: orange;
+  border-bottom: orange solid 1.5px;
+  padding-bottom: 1px;
+}
+.city-features a:hover,
+.city-features a:active {
+  border-bottom: 1.5px solid white;
+  transition-duration: 0.5s;
+}
+
+/*------------------------------------------------*/
+/* NAVIGATION*/
+/*------------------------------------------------*/
+.section-testimonials {
+  color: rgb(136, 116, 116);
+  padding: 0 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-testimonials h2 {
+  color: white;
+}
+blockquote,
+cite {
+  font-family: sans-serif;
+  color: white;
+  font-size: 100%;
+  font-style: italic;
+}
+blockquote:before {
+  content: "\201c";
+  font-size: 400%;
+}
+blockquote {
+  padding: 5% 10% 10% 10%;
+  line-height: 120%;
+}
+cite {
+  font-size: 90%;
+  margin-top: 10px;
+  display: block;
+}
+cite img {
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+/*------------------------------------------------*/
+/* SIGHN UP*/
+/*------------------------------------------------*/
+.section-plans {
+  padding: 50px 150px;
+  background-color: rgb(245, 239, 239);
+}
+.plan-box {
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px grey;
+}
+.plan-box div:first-child {
+  background-color: rgb(235, 235, 235);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid rgb(206, 193, 193);
+}
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 15px;
+  color: orange;
+}
+.plan-price span {
+  font-size: 35%;
+  color: orange;
+}
+.plan-price-meal {
+  font-size: 80%;
+}
+.plan-box ul {
+  list-style: none;
+}
+.plan-box ul li {
+  padding: 5x 0;
+}
+/*------------------------------------------------*/
+/* section form*/
+/*------------------------------------------------*/
+.section-form {
+  width: 60%;
+  margin: 10px auto 60px auto;
+  font-size: 110%;
+  font-family: serif;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 70%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+*:focus {
+  outline: none;
+}
+label {
+  padding-left: 60px;
+}
+/*------------------------------------------------*/
+/* footer*/
+/*------------------------------------------------*/
+footer {
+  background-color: rgb(73, 71, 71);
+  padding: 10px 200px 40px 200px;
+}
+.footer-nav {
+  text-decoration: none;
+  float: left;
+}
+.social-links {
+  text-decoration: none;
+  float: right;
+}
+.social-links li,
+.footer-nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: gray;
+}
+.footer-nav li a:active,
+.footer-nav li a:hover {
+  color: white;
+  transition-duration: 0.5s;
+}
+.icon {
+  text-decoration: none;
+  color: gray;
+  font-size: 110%;
+  transition-duration: 0.5s;
+}
+
+ion-icon[name="logo-facebook"]:hover {
+  color: #3b5998;
+  font-size: 150%;
+  overflow: hidden;
+}
+ion-icon[name="logo-twitter"]:hover {
+  color: #00aced;
+  font-size: 150%;
+  overflow: hidden;
+}
+ion-icon[name="logo-google"]:hover {
+  color: #dd4b39;
+  font-size: 150%;
+  overflow: hidden;
+}
+ion-icon[name="logo-instagram"]:hover {
+  color: #517fa4;
+  font-size: 150%;
+  overflow: hidden;
+}
+
+footer p {
+  font-family: sans-serif;
+  color: gray;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 100px;
+  font-size: 90%;
+}
+/*------------------------------------------------*/
+/* animations*/
+/*------------------------------------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+}
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
+  transition-duration: 1s;
+}

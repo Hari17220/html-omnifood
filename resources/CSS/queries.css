@@ -1,0 +1,173 @@
+/*from big tablet to 1200px(widths smaller then the 1400px row*/
+@media only screen and (max-width:1200px){
+body{
+    width: 100%;
+    height: auto;
+    overflow-x:  hidden;
+}
+    .logo{
+        height: 6%;
+        width: 6%;
+        float: left;
+        margin: 3% 5%;
+        }
+        .hero{
+            width: 100%;
+            padding: 0 2%;
+             }
+         footer{
+            padding: 0 15%;
+        }
+         .span-1-of-3 label {
+            padding-left:2%  ;
+        }
+        section{
+            padding: 0;
+        }
+                              
+
+/*small tablet to big tablet from 767px to 1023px*/
+@media only screen and (max-width:1023px){
+    body{
+        font-size: 15px;
+        width: 100%;
+              }
+    .logo{
+        height: 10%;
+        width: 10%;
+        float: left;
+        margin: 20px 100px;
+        }
+ /*-------------------------------------------------*/
+             .long-copy{
+                 width: 100%;
+                 margin-left: 10%;
+             }
+ 
+ /*-------------------------------------------------*/
+
+      .steps-box{
+        height: 320px;
+       width: auto;
+     float: left;
+      padding: 15px 0px 20px 40px;
+      margin: 2px 40px 0 80px;
+      
+    }
+ .steps-box1{
+     
+        word-spacing: 1px;
+        text-align: justify;
+         padding:50px 10px 0 0;
+         float: left;
+         margin: 50px;
+         margin-top: 2px;
+   
+     }
+.app{
+ height: 100%;
+ width: auto;
+    }
+
+   .steps{
+       text-align: justify;
+       float: left;
+       font-size: 110%;
+       margin:0 0 0 5px;
+       padding-bottom: 20px;
+        
+   }
+ .link{
+    
+     width: 100px;
+     height:auto;
+    }
+    .total{
+        width: 100%;
+        margin: 0;
+    }
+/*----------------------------section cities--------------------------*/
+.total{
+    padding: 0 20px;
+}
+ 
+ 
+ .city-features{
+     margin:5px 5px;
+     font-size: 80%;
+     font-family: sans-serif;
+ }
+ /*----------------------------section plans--------------------------*/
+.section-plans{
+    padding: 20px 0;
+    background-color: rgb(245, 239, 239) ;
+}
+/*----------------------------footer--------------------------*/
+         footer{
+            padding: 10px 30px;
+            
+        }
+/*-----------------------------------------------------------------*/
+.section-plans{
+   width: 100%;
+  }
+.plan-box{
+   margin: 0 10px ;
+   width: auto;
+}
+
+ /*--small phones to small tablets from 481px to 767px*/
+@media only screen and (max-width:767px){
+    .hero{
+        position: absolute;
+        top: 40%;
+        left:1%;
+        margin-left: 50px;
+         }
+    h1{
+          font-size: 140%;
+          font-weight:5; 
+          margin: 0 0 10px 0;
+             
+        }
+           
+        body{
+               font-size:90%; 
+            width: 100%; 
+            overflow-x:hidden;  
+            }
+    
+    .col{
+        width:100%;
+    }
+    .list li{
+        margin:0 4px 0 4px;
+        word-spacing: 0;
+        
+    }
+    .logo{
+        margin:10px 30px;
+        width: 15%;
+        padding-left: 20px;
+    }
+    nav.row{
+        display: inline-block;
+        width:10%;
+    }
+        /*----------------------------plan box--------------------------*/
+        
+        .section-plans{
+            width: 100%;
+           }
+         .plan-box{
+        margin: 0 -20 0 10%;
+            width: 60%;
+         }
+             
+
+
+
+/*--small phones from 0 to 480px*/
+@media only screen and (max-width:480px){
+
+}
